@@ -1,0 +1,35 @@
+﻿<Window x:Class="TimeManagementUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimeManagementUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStyle="None" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        
+
+
+
+        <Image Source="UI_Images\trainstation.PNG"  HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="800" Stretch="UniformToFill"/>
+
+
+        <Rectangle HorizontalAlignment="Left" Height="40" Stroke="White" VerticalAlignment="Top" Width="800" Fill="White" Opacity="0.8"/>
+
+        <Button x:Name="ExitButton" Content="X" HorizontalAlignment="Left" Margin="763,9,0,0" VerticalAlignment="Top" Click="Exit_Button" Width="27" Height="24" Background="LightGray" Padding="0,0,0,1" FontSize="16" FontWeight="Bold" BorderThickness="1,1,1,1"/>
+
+        <Label Content="Time Management Application" HorizontalAlignment="Left" Margin="0,5,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button Content="Start" HorizontalAlignment="Left" Margin="323,367,0,0" VerticalAlignment="Top" Width="119" AutomationProperties.Name="StartButton" Click="StartButton" Height="39"/>
+        <Button Content="−" HorizontalAlignment="Left" Margin="731,9,0,0" VerticalAlignment="Top"  Width="27" Height="24" Background="LightGray" Padding="0,0,0,1" FontSize="18" FontWeight="Bold" BorderThickness="1,1,1,1" Click="MinimizeButton"/>
+       
+        
+        <Calendar HorizontalAlignment="Left" Margin="294,170,0,0" VerticalAlignment="Top"/>
+        <Label Content="If you are ready to run this program&#x0a;please click the start button" HorizontalAlignment="Left" Margin="259,99,0,0" VerticalAlignment="Top" FontSize="15"/>
+
+
+    </Grid>
+
+
+
+</Window>

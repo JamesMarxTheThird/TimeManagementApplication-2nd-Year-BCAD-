@@ -1,0 +1,55 @@
+﻿<Window x:Class="TimeManagementUI.UserModulePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimeManagementUI"
+        mc:Ignorable="d"
+        Title="UserModulePage" Height="450" Width="800"  WindowStyle="None" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" WindowStartupLocation="CenterScreen" Background="LightGray">
+    <Grid>
+
+        <Rectangle HorizontalAlignment="Left" Height="40" Stroke="White" VerticalAlignment="Top" Width="800" Fill="White" Opacity="0.8"/>
+
+        <Button x:Name="ExitButton" Content="X" HorizontalAlignment="Left" Margin="763,9,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="27" Height="24" Background="LightGray" Padding="0,0,0,1" FontSize="16" FontWeight="Bold" BorderThickness="1,1,1,1" AutomationProperties.Name="ExitButton"/>
+
+        <Label Content="Module Information" HorizontalAlignment="Left" Margin="0,2,0,0" VerticalAlignment="Top" FontSize="16"/>
+
+        <Button Content="−" HorizontalAlignment="Left" Margin="731,9,0,0" VerticalAlignment="Top"  Width="27" Height="24" Background="LightGray" Padding="0,0,0,1" FontSize="18" FontWeight="Bold" BorderThickness="1,1,1,1" Click="MinimizeButton"/>
+        <Label Content="If you would like to add a module complete&#x0a;all the fields below and click 'Add Module'. " HorizontalAlignment="Left" Margin="4,55,0,0" VerticalAlignment="Top" FontSize="13" BorderBrush="Gray" BorderThickness="1" Width="268" Height="52"/>
+        <Label Content="Module Code: " HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ModuleCodeTB" HorizontalAlignment="Left" Height="23" Margin="126,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="MCodeTxt"/>
+        <Label Content="Module Name: " HorizontalAlignment="Left" Margin="10,236,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ModuleNameTB" HorizontalAlignment="Left" Height="23" Margin="126,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="MNameTxt" PreviewTextInput="OnlyLetters"/>
+        <Label Content="Module Credits: " HorizontalAlignment="Left" Margin="10,284,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ModuleCreditsTB" HorizontalAlignment="Left" Height="23" Margin="126,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="MCreditsTxt" PreviewTextInput="PreviewTextInput"/>
+        <Label Content="Class hours&#x0a;per week: " HorizontalAlignment="Left" Margin="10,326,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="HoursPWTB" HorizontalAlignment="Left" Height="23" Margin="124,345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="ClassHoursTxt" PreviewTextInput="PreviewTextInput"/>
+        <Label Content="Enter the number of&#x0a;weeks in the semester" HorizontalAlignment="Left" Margin="10,392,0,0" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="NoWeeksTB" HorizontalAlignment="Left" Height="23" Margin="154,402,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" TextChanged="NoWeeksTxt" PreviewTextInput="PreviewTextInput"/>
+        <Label Content="Select the start date&#xA;of the semester" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top"/>
+        <Button Content="Add Module" HorizontalAlignment="Left" Margin="267,400,0,0" VerticalAlignment="Top" Width="89" Height="33" Click="AddModuleButton"/>
+        <Button Content="Working&#x0a;Hours" HorizontalAlignment="Left" Margin="720,392,0,0" VerticalAlignment="Top" Width="59" Height="41" Click="ViewListButton" RenderTransformOrigin="0.476,0.528"/>
+
+        <DatePicker x:Name="StartDatePicker" HorizontalAlignment="Left" Margin="126,146,0,0" VerticalAlignment="Top" SelectedDateFormat="Long" IsTodayHighlighted="True" Width="120" />
+        <Label Content="Your current modules " HorizontalAlignment="Left" Margin="523,66,0,0" VerticalAlignment="Top" FontSize="13" BorderBrush="Gray" BorderThickness="1" Width="138" Height="32"/>
+        <Label Content="Module Name " HorizontalAlignment="Left" Margin="413,135,0,0" VerticalAlignment="Top" FontSize="12" BorderBrush="Gray" BorderThickness="1" Width="139" Height="26"/>
+        <Label Content="Self Study Hours requierd per week" HorizontalAlignment="Left" Margin="552,135,0,0" VerticalAlignment="Top" FontSize="12" BorderBrush="Gray" BorderThickness="1" Width="206" Height="26"/>
+        <Border BorderBrush="Gray" BorderThickness="1" HorizontalAlignment="Left" Height="222" Margin="413,135,0,0" VerticalAlignment="Top" Width="345"/>
+        <Border BorderBrush="Gray" BorderThickness="1" HorizontalAlignment="Left" Height="203" Margin="551,155,0,0" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+
+        <ListBox x:Name="ModuleListBox" HorizontalAlignment="Left" Height="182" Margin="421,166,0,0" VerticalAlignment="Top" Width="121"/>
+        <ListBox x:Name="SSHListBox" HorizontalAlignment="Left" Height="182" Margin="562,166,0,0" VerticalAlignment="Top" Width="187"/>
+
+        <Border BorderBrush="Gray" BorderThickness="1,0,1,0" HorizontalAlignment="Left" Height="383" Margin="390,51,0,0" VerticalAlignment="Top" Width="5" />
+        <Label Content="If you would like to calculate remaining self study&#x0a;hours of this week after working on a certain date" HorizontalAlignment="Left" Margin="413,391,0,0" VerticalAlignment="Top" Width="283"/>
+    </Grid>
+</Window>
