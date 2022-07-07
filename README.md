@@ -1,7 +1,14 @@
------------ Time Management Application - James Marx - Read Me -----------
+<Time Management Application>
+-------  James Marx  -------
 Done while at Varsity College, Second Year studying BCAD. 
 
+<Prerequisites>
 
+This is a C# application that runs on Visual Studios 2019 and 2022.
+
+If you do not want to download it, screen shots of applicaiton pages and uage will be attached.
+
+</Prerequisites>
 
 <Introduction> 
 
@@ -23,8 +30,6 @@ The most interesting part of this for me, was learning LINQ queries as I really 
 and have proven to be very effective when manipulating data. Can't wait to use them with databases.
 
 </Introduction>
-
----------------------
 
 <Getting Started>
 
@@ -52,3 +57,9 @@ You can select other dates this week and deduct more hours, this will help to se
 After this you are done! You can either close or return to home. Feel free to run this app whenever you need to monitor your self study hours.
 
 </Getting Started>
+
+</Time Manaement Applicaiton>
+
+![start](https://user-images.githubusercontent.com/101861214/177848368-9a59ce07-a216-467b-b00b-82548051f27f.png)
+![2nd](https://user-images.githubusercontent.com/101861214/177848835-1b288f88-cd46-4945-9a5b-20bf8c53a45f.png)
+![3rdrealreal](https://user-images.githubusercontent.com/101861214/177848867-b451d4f0-99b1-4692-9034-4922bfd3b44d.png)
